@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors - Luxury Black & Gold Theme */
+    --background: 0 0% 4%;
+    --foreground: 45 20% 95%;
+    
+    /* Rich black variants */
+    --card: 0 0% 6%;
+    --card-foreground: 45 20% 95%;
+    
+    --popover: 0 0% 8%;
+    --popover-foreground: 45 20% 95%;
+    
+    /* Gold primary color */
+    --primary: 45 80% 55%;
+    --primary-foreground: 0 0% 4%;
+    
+    /* Muted gold secondary */
+    --secondary: 45 30% 15%;
+    --secondary-foreground: 45 60% 75%;
+    
+    --muted: 0 0% 12%;
+    --muted-foreground: 45 10% 60%;
+    
+    /* Gold accent */
+    --accent: 45 70% 50%;
+    --accent-foreground: 0 0% 4%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 45 20% 95%;
+    
+    /* Gold-tinted borders */
+    --border: 45 20% 18%;
+    --input: 45 15% 15%;
+    --ring: 45 80% 55%;
+    
+    --radius: 0.25rem;
+    
+    /* Custom luxury tokens */
+    --gold: 45 80% 55%;
+    --gold-light: 45 70% 70%;
+    --gold-dark: 45 70% 35%;
+    --gold-muted: 45 30% 25%;
+    
+    --cream: 45 30% 90%;
+    --charcoal: 0 0% 10%;
+    --jet: 0 0% 6%;
+    
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 55%), hsl(35 80% 45%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 4%), hsl(0 0% 8%));
+    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.8) 100%);
+    
+    /* Shadows */
+    --shadow-gold: 0 0 30px hsla(45, 80%, 55%, 0.15);
+    --shadow-gold-strong: 0 0 50px hsla(45, 80%, 55%, 0.25);
+    --shadow-luxury: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Sidebar (keeping for compatibility) */
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 45 20% 95%;
+    --sidebar-primary: 45 80% 55%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 45 30% 15%;
+    --sidebar-accent-foreground: 45 60% 75%;
+    --sidebar-border: 45 20% 18%;
+    --sidebar-ring: 45 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-family: var(--font-body);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  /* Gold text gradient */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, hsl(45 80% 65%), hsl(35 80% 50%), hsl(45 80% 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Gold border glow */
+  .border-gold-glow {
+    border: 1px solid hsl(var(--gold));
+    box-shadow: 0 0 20px hsla(45, 80%, 55%, 0.2), inset 0 0 20px hsla(45, 80%, 55%, 0.05);
+  }
+  
+  /* Luxury card styling */
+  .luxury-card {
+    @apply bg-card border border-border rounded-sm;
+    box-shadow: var(--shadow-luxury);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .luxury-card:hover {
+    border-color: hsl(var(--gold));
+    box-shadow: var(--shadow-gold);
+  }
+  
+  /* Gold divider */
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--gold)), transparent);
+  }
+  
+  /* Hero overlay */
+  .hero-overlay {
+    background: var(--gradient-overlay);
+  }
+  
+  /* Gold button glow */
+  .btn-gold-glow {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-gold-glow::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, hsl(45 80% 55%), hsl(35 80% 45%), hsl(45 80% 55%));
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .btn-gold-glow:hover::before {
+    opacity: 1;
+  }
+  
+  /* Sticky nav shadow */
+  .nav-scrolled {
+    background: hsla(0, 0%, 4%, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Image hover frame */
+  .image-gold-frame {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-gold-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid transparent;
+    transition: border-color 0.4s ease;
+    pointer-events: none;
+  }
+  
+  .image-gold-frame:hover::after {
+    border-color: hsl(var(--gold));
+  }
+  
+  /* Cinematic lightbox overlay */
+  .lightbox-overlay {
+    background: hsla(0, 0%, 2%, 0.95);
+    backdrop-filter: blur(8px);
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  
+  .font-body {
+    font-family: var(--font-body);
+  }
+  
+  /* Animation utilities */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+  
+  .animate-slide-left {
+    animation: slideLeft 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-right {
+    animation: slideRight 0.6s ease-out forwards;
+  }
+  
+  /* Parallax effect */
+  .parallax {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 6%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold-muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold));
+}
+
+/* Selection color */
+::selection {
+  background: hsla(45, 80%, 55%, 0.3);
+  color: hsl(var(--cream));
+}
