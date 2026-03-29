@@ -35,7 +35,7 @@ export const EnquiryModal = ({ isOpen, onClose, preSelectedPackage }: EnquiryMod
     );
 
     // Open WhatsApp
-    window.open(`https://wa.me/919876543210?text=${whatsappMessage}`, '_blank');
+    window.location.href = `https://wa.me/919876543210?text=${whatsappMessage}`;
 
     setIsSubmitting(false);
     onClose();
