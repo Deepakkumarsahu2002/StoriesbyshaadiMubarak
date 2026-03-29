@@ -5,13 +5,19 @@ require("dotenv").config();
 
 const app = express();
 
-/* ✅ FINAL CORS CONFIG (PRODUCTION READY) */
+/* ✅ Fix for Chrome's Local Network Access (LNA) popup */
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Private-Network", "true");
+  next();
+});
+
+/* ✅ CORS CONFIG (PRODUCTION READY) */
 app.use(cors({
   origin: function (origin, callback) {
     if (
-      !origin || // allow tools like Postman / direct browser
-      origin.includes("pages.dev") || // ✅ allow all Cloudflare Pages domains
-      origin.includes("localhost")   // ✅ allow local development
+      !origin ||
+      origin.includes("pages.dev") ||
+      origin.includes("localhost")
     ) {
       callback(null, true);
     } else {
