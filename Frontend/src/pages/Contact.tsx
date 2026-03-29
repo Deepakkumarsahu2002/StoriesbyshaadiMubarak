@@ -28,8 +28,8 @@ const Contact = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { icon: Phone, label: 'Phone', value: '+91 98765 43210', href: 'tel:+919876543210' },
-              { icon: Mail, label: 'Email', value: 'hello@luxeframes.com', href: 'mailto:hello@luxeframes.com' },
+              { icon: Phone, label: 'Phone', value: '+91 98765 43210'},
+              { icon: Mail, label: 'Email', value: 'hello@luxeframes.com'},
               { icon: MapPin, label: 'Studio', value: '123 Luxury Lane, Mumbai 400001', href: '#' },
             ].map((item, i) => (
               <motion.a key={item.label} href={item.href} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="luxury-card p-8 text-center group">
