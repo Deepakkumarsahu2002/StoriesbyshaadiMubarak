@@ -5,12 +5,19 @@ require("dotenv").config();
 
 const app = express();
 
-/* ✅ CORS CONFIG (IMPORTANT) */
+/* ✅ FINAL CORS CONFIG (PRODUCTION READY) */
 app.use(cors({
-  origin: [
-    "https://storiesbyshaadimubarak.pages.dev",  // 🔁 replace with your Cloudflare URL
-    "http://localhost:5173"           // for local testing
-  ],
+  origin: function (origin, callback) {
+    if (
+      !origin || // allow tools like Postman / direct browser
+      origin.includes("pages.dev") || // ✅ allow all Cloudflare Pages domains
+      origin.includes("localhost")   // ✅ allow local development
+    ) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
