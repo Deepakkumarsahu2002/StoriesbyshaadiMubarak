@@ -94,7 +94,6 @@ export const packages: Package[] = [
       '500+ edited photos',
       'Premium photo album',
       'Drone photography',
-      'Same-day photo preview',
       'Online gallery forever',
     ],
     startingPrice: '₹1,00,000',
