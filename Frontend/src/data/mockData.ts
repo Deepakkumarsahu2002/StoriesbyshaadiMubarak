@@ -74,30 +74,30 @@ export const videos: Video[] = [
 export const packages: Package[] = [
   {
     id: '1',
-    name: 'Pre-Wedding Photography',
+    name: 'Pre-Wedding Package',
     description: 'Capture your love story before the big day with stunning pre-wedding shoots at exotic locations.',
     includes: [
-      '4-6 hours of photography',
+      '4-6 hours of Shooting',
       '100+ edited photos',
       'Multiple outfit changes',
       'Location consultation',
       'Online gallery access',
     ],
-    startingPrice: '₹35,000',
+    startingPrice: '₹30,000',
   },
   {
     id: '2',
-    name: 'Wedding Photography',
+    name: 'The Wedding Package',
     description: 'Comprehensive wedding day coverage capturing every precious moment of your celebration.',
     includes: [
-      'Full day coverage (12+ hours)',
+      'All Ritual coverage',
       '500+ edited photos',
       'Premium photo album',
       'Drone photography',
       'Same-day photo preview',
       'Online gallery forever',
     ],
-    startingPrice: '₹1,50,000',
+    startingPrice: '₹1,00,000',
     popular: true,
   },
   {
@@ -111,7 +111,7 @@ export const packages: Package[] = [
       'Print-ready files',
       'Quick delivery',
     ],
-    startingPrice: '₹25,000',
+    startingPrice: '₹30,000',
   },
   {
     id: '4',
@@ -119,33 +119,33 @@ export const packages: Package[] = [
     description: 'Intimate and romantic couple sessions that tell your unique love story.',
     includes: [
       '2-3 hours session',
-      '75+ edited photos',
+      '100+ edited photos',
       'Styled shoot guidance',
-      'Multiple locations',
+      'Video highlights',
       'Personalized mood board',
     ],
-    startingPrice: '₹20,000',
+    startingPrice: '₹40,000',
   },
 ];
 
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Priya & Arjun Sharma',
+    name: 'Dipti & Sidhant',
     occasion: 'Wedding Photography',
     quote: 'Absolutely magical! They captured every emotion, every tear of joy, every laugh. Our wedding album is our most treasured possession.',
     rating: 5,
   },
   {
     id: '2',
-    name: 'Sarah & Michael Chen',
+    name: 'Kalyani & Milan',
     occasion: 'Pre-Wedding Shoot',
     quote: 'The pre-wedding shoot in Udaipur was beyond our dreams. The team made us feel like movie stars!',
     rating: 5,
   },
   {
     id: '3',
-    name: 'Ananya Krishnan',
+    name: 'Trisha',
     occasion: 'Birthday Event',
     quote: 'Professional, creative, and incredibly talented. They made my daughter\'s first birthday truly unforgettable.',
     rating: 5,

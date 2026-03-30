@@ -6,8 +6,8 @@ import photographerImg from '@/assets/photographer.jpg';
 
 const stats = [
   { icon: Camera, value: '500+', label: 'Weddings Captured' },
-  { icon: Award, value: '15+', label: 'Years Experience' },
-  { icon: Heart, value: '1000+', label: 'Happy Couples' },
+  { icon: Award, value: '5+', label: 'Years Experience' },
+  { icon: Heart, value: '100+', label: 'Happy Couples' },
 ];
 
 export const AboutPreview = () => {
@@ -56,7 +56,7 @@ export const AboutPreview = () => {
           >
             <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">About Us</p>
             <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-              Crafting Visual Poetry Since 2009
+              Crafting Visual Poetry Since 2020
             </h2>
             <div className="gold-divider w-24 mb-8" />
             

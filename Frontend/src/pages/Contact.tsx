@@ -28,9 +28,9 @@ const Contact = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { icon: Phone, label: 'Phone', value: '+91 98765 43210'},
-              { icon: Mail, label: 'Email', value: 'hello@luxeframes.com'},
-              { icon: MapPin, label: 'Studio', value: '123 Luxury Lane, Mumbai 400001', href: '#' },
+              { icon: Phone, label: 'Phone', value: '+91 7504595625', href: 'tel:+917504595625' },
+              { icon: Mail, label: 'Email', value: 'sidhant750@gmail.com', href: 'mailto:sidhant750@gmail.com' },
+              { icon: MapPin, label: 'Studio', value: 'Gandhi Nagar 5th Lane, Brahmapur, Odisha 760001'},
             ].map((item, i) => (
               <motion.a key={item.label} href={item.href} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="luxury-card p-8 text-center group">
                 <item.icon className="w-10 h-10 text-gold mx-auto mb-4 group-hover:scale-110 transition-transform" />
@@ -45,7 +45,7 @@ const Contact = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" onClick={() => setIsModalOpen(true)}><Send className="mr-2" size={18} />Send Enquiry</Button>
               <Button variant="hero-outline" asChild>
-                <a href="https://wa.me/919876543210?text=Hello, I would like to enquire about your photography services." target="_blank" rel="noopener noreferrer"><MessageCircle className="mr-2" size={18} />WhatsApp Us</a>
+                <a href="https://wa.me/917504595625?text=Hello, I would like to enquire about your photography services." target="_blank" rel="noopener noreferrer"><MessageCircle className="mr-2" size={18} />WhatsApp Us</a>
               </Button>
             </div>
           </div>
@@ -54,11 +54,14 @@ const Contact = () => {
 
       {/* Map Placeholder */}
       <section className="h-[400px] bg-muted flex items-center justify-center">
-        <div className="text-center">
-          <MapPin className="w-12 h-12 text-gold mx-auto mb-4" />
-          <p className="text-muted-foreground">Google Maps Integration</p>
-        </div>
-      </section>
+  <iframe
+    src="https://www.google.com/maps?q=19.3067363,84.7894499&z=15&output=embed"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    loading="lazy"
+  ></iframe>
+</section>
 
       <EnquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </Layout>

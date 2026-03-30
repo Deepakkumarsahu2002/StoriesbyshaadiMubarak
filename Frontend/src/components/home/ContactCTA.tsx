@@ -42,7 +42,7 @@ export const ContactCTA = () => {
               </Button>
               <Button variant="hero-outline" asChild>
                 <a
-                  href="https://wa.me/919876543210?text=Hello, I would like to enquire about your photography services."
+                  href="https://wa.me/917504595625?text=Hello, I would like to enquire about your photography services."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gap-2"

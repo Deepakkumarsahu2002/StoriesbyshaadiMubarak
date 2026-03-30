@@ -137,7 +137,7 @@ const Packages = () => {
               </Button>
               <Button variant="hero-outline" asChild>
                 <a
-                  href="https://wa.me/919876543210?text=Hi, I'm interested in a custom photography package."
+                  href="https://wa.me/917504595625?text=Hi, I'm interested in a custom photography package."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gap-2"

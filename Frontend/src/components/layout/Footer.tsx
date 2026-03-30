@@ -20,7 +20,7 @@ export const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/stories_by_shaadimubarak/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-gold/50 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300"
@@ -29,7 +29,7 @@ export const Footer = () => {
                 <Instagram size={18} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/ShaadiMubarak.Official"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-gold/50 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300"
@@ -91,17 +91,17 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-gold mt-0.5 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  123 Luxury Lane, Photography District,<br />
-                  Mumbai, Maharashtra 400001
+                    Gandh Nagar 5th Lane, Brahmapur,<br />
+                    Odisha 760001
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-gold flex-shrink-0" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+917504595625"
                   className="text-muted-foreground hover:text-gold transition-colors text-sm"
                 >
-                  +91 98765 43210
+                  +91 75045 95625
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -110,7 +110,7 @@ export const Footer = () => {
                   href="mailto:hello@luxeframes.com"
                   className="text-muted-foreground hover:text-gold transition-colors text-sm"
                 >
-                  hello@luxeframes.com
+                  sidhant750@gmail.com
                 </a>
               </li>
             </ul>
@@ -122,7 +122,7 @@ export const Footer = () => {
       <div className="border-t border-border">
         <div className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm text-center md:text-left">
-            © 2024 Stories By Shaadi Mubarak. All rights reserved. Crafted with passion.
+            © 2026 Stories By Shaadi Mubarak. All rights reserved. Website Designed by Deepak.
           </p>
           <div className="flex items-center gap-6">
             <Link
