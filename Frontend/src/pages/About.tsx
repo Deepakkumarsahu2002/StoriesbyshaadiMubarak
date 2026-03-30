@@ -7,17 +7,16 @@ import photographerImg from '@/assets/photographer.jpg';
 import hero2 from '@/assets/hero-2.jpg';
 
 const achievements = [
-  { icon: Camera, value: '500+', label: 'Weddings Shot' },
-  { icon: Users, value: '1000+', label: 'Happy Couples' },
-  { icon: Calendar, value: '15+', label: 'Years Experience' },
-  { icon: Trophy, value: '50+', label: 'Awards Won' },
+  { icon: Camera, value: '50+', label: 'Weddings Shot' },
+  { icon: Users, value: '100+', label: 'Happy Couples' },
+  { icon: Calendar, value: '5+', label: 'Years Experience' },
+  { icon: Trophy, value: '3+', label: 'Awards Won' },
 ];
 
 const awards = [
   'Best Wedding Photographer 2023 - Wedding Sutra',
-  'Excellence in Photography - WPPI 2022',
-  'Top 10 Wedding Photographers in India - Vogue',
-  'Masters Award - International Wedding Photography',
+  'Excellence in Photography - WPPI 2022',,
+  'Masters Award - National Wedding Photography',
 ];
 
 const About = () => {
@@ -79,14 +78,14 @@ const About = () => {
               <div className="gold-divider w-24 mb-8" />
               
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Founded in 2009, LuxeFrames has been at the forefront of luxury wedding 
+                Founded in 2020, LuxeFrames has been at the forefront of luxury wedding 
                 photography in India. What started as a passionate pursuit of capturing 
                 beautiful moments has evolved into an award-winning studio trusted by 
-                over 1000 couples.
+                over 100 couples.
               </p>
               
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our lead photographer, with over 15 years of experience, brings a unique 
+                Our lead photographer, with over 5 years of experience, brings a unique 
                 blend of technical expertise and artistic vision to every project. We 
                 believe that every love story is unique, and our mission is to tell yours 
                 in the most beautiful way possible.
@@ -184,7 +183,7 @@ const About = () => {
                 observers, capturing genuine emotions and creating images that transport 
                 you back to those precious moments, years from now."
               </p>
-              <p className="text-gold mt-4 font-heading">— The LuxeFrames Team</p>
+              <p className="text-gold mt-4 font-heading">— The ShaadiMubarak Team</p>
             </motion.div>
           </div>
         </div>
