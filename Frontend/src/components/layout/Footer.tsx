@@ -91,7 +91,7 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-gold mt-0.5 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                    Gandh Nagar 5th Lane, Brahmapur,<br />
+                    Gandhi Nagar 5th Lane, Brahmapur,<br />
                     Odisha 760001
                 </span>
               </li>
