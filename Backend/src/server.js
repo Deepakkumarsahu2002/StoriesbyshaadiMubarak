@@ -17,7 +17,8 @@ app.use(cors({
     if (
       !origin ||
       origin.includes("pages.dev") ||
-      origin.includes("localhost")
+      origin.includes("localhost") ||
+      origin.includes("storiesbyshaadimubarak.in")
     ) {
       callback(null, true);
     } else {
