@@ -89,12 +89,18 @@ export const Footer = () => {
             <h3 className="text-gold font-heading text-lg mb-6">Get in Touch</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">
-                    Gandhi Nagar 5th Lane, Brahmapur,<br />
-                    Odisha 760001
-                </span>
-              </li>
+  <MapPin size={18} className="text-gold mt-0.5 flex-shrink-0" />
+  
+  <a 
+    href="https://www.google.com/maps?q=19.3067363,84.7894499&z=15"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-muted-foreground text-sm hover:underline"
+  >
+    Gandhi Nagar 5th Lane, Brahmapur,<br />
+    Odisha 760001
+  </a>
+</li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-gold flex-shrink-0" />
                 <a
@@ -107,7 +113,7 @@ export const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-gold flex-shrink-0" />
                 <a
-                  href="mailto:hello@luxeframes.com"
+                  href="mailto:sidhant750@gmail.com"
                   className="text-muted-foreground hover:text-gold transition-colors text-sm"
                 >
                   sidhant750@gmail.com
