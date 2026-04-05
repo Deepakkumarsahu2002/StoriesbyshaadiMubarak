@@ -72,8 +72,8 @@ export const Footer = () => {
             <ul className="space-y-3">
               {[
                 'Wedding & Pre-Wedding Shoots',
-                'Engagement Shoots'
-                'Birthday & Pre-Birthday Shoots'
+                'Engagement Shoots',
+                'Birthday & Pre-Birthday Shoots',
                 'Thread Ceremony Shoots',
                 'Portfolio & Ad Shoots'
               ].map((service) => (
