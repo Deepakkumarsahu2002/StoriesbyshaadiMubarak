@@ -16,7 +16,7 @@ export const Footer = () => {
             </h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Capturing timeless moments with artistry and elegance. 
-              Your story, beautifully told through our lens.
+              Your story, beautifully told through our Camera Lens.
             </p>
             <div className="flex gap-4">
               <a
