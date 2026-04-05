@@ -60,8 +60,8 @@ const About = () => {
               </h2>
               <div className="gold-divider w-24 mx-auto mb-8" />
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Stories By Shaadi Mubarak is an elite collective team of 12 highly skilled visual
-                artists, led by the young and visionary cinematographer and candid photographer,
+                Stories By Shaadi Mubarak is an elite team comprising of 12 highly skilled visual
+                artists, led by the young and visionary cinematographers and candid photographers,
                 <span className="text-foreground font-medium"> Sidhant Kumar Bisoyi</span>. Renowned
                 for his refined aesthetic and storytelling finesse, Sidhant has cultivated a team
                 that redefines wedding documentation with elegance and sophistication.
