@@ -71,11 +71,11 @@ export const Footer = () => {
             <h3 className="text-gold font-heading text-lg mb-6">Services</h3>
             <ul className="space-y-3">
               {[
-                'Wedding Photography',
-                'Pre-Wedding Shoots',
-                'Engagement Sessions',
-                'Birthday Events',
-                'Wedding Films',
+                'Wedding & Pre-Wedding Shoots',
+                'Engagement Shoots'
+                'Birthday & Pre-Birthday Shoots'
+                'Thread Ceremony Shoots',
+                'Portfolio & Ad Shoots'
               ].map((service) => (
                 <li key={service}>
                   <span className="text-muted-foreground text-sm">{service}</span>
