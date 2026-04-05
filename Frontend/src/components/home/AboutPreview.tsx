@@ -42,8 +42,8 @@ export const AboutPreview = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="absolute -bottom-6 -right-6 lg:right-12 bg-card border border-gold/50 px-6 py-4 rounded-sm shadow-lg"
             >
-              <p className="text-gold font-heading text-3xl">12</p>
-              <p className="text-muted-foreground text-sm">Visual Artists</p>
+              <p className="text-gold font-heading text-3xl">9+</p>
+              <p className="text-muted-foreground text-sm">Years Exp.</p>
             </motion.div>
           </motion.div>
 
