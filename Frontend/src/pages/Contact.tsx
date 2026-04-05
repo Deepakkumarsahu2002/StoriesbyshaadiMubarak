@@ -29,7 +29,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
               { icon: Phone, label: 'Phone', value: '+91 7504595625', href: 'tel:+917504595625' },
-              { icon: Mail, label: 'Email', value: 'sidhant750@gmail.com', href: 'mailto:sidhant750@gmail.com' },
+              { icon: Mail, label: 'Email', value: 'shaadimubarak339@gmail.com', href: 'mailto:shaadimubarak339@gmail.com' },
               { icon: MapPin, label: 'Studio', value: 'Gandhi Nagar 5th Lane, Brahmapur, Odisha 760001'},
             ].map((item, i) => (
               <motion.a key={item.label} href={item.href} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="luxury-card p-8 text-center group">

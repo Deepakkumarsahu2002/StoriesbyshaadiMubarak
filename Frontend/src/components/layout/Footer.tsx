@@ -107,16 +107,16 @@ export const Footer = () => {
                   href="tel:+917504595625"
                   className="text-muted-foreground hover:text-gold transition-colors text-sm"
                 >
-                  +91 75045 95625
+                  +91 75045 95625,+91 75041 16335
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-gold flex-shrink-0" />
                 <a
-                  href="mailto:sidhant750@gmail.com"
+                  href="mailto:shaadimubarak339@gmail.com"
                   className="text-muted-foreground hover:text-gold transition-colors text-sm"
                 >
-                  sidhant750@gmail.com
+                  shaadimubarak339@gmail.com
                 </a>
               </li>
             </ul>

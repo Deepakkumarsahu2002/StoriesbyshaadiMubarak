@@ -112,7 +112,7 @@ const About = () => {
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 A young and visionary cinematographer and candid photographer, Sidhant leads the
-                Stories By Shaadi Mubarak collective with a sharp eye for beauty and an instinct
+                Stories By Shaadi Mubarak with a sharp eye for beauty and an instinct
                 for authentic storytelling. His refined aesthetic sensibility sets the creative
                 standard for every project the studio undertakes.
               </p>
