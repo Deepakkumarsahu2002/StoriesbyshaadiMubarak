@@ -77,13 +77,13 @@ export const packages: Package[] = [
     name: 'Pre-Wedding Package',
     description: 'Capture your love story before the big day with stunning pre-wedding shoots at exotic locations.',
     includes: [
-      '4-6 hours of Shooting',
+      '6-8 hours of Shooting',
       '100+ edited photos',
-      'Multiple outfit changes',
+      '10 Sheets NTB Luxury Album',
       'Location consultation',
-      'Online gallery access',
+      'Reels of each Event 30-40 sec.',
     ],
-    startingPrice: '₹30,000',
+    startingPrice: '₹45,000',
   },
   {
     id: '2',
@@ -91,12 +91,13 @@ export const packages: Package[] = [
     description: 'Comprehensive wedding day coverage capturing every precious moment of your celebration.',
     includes: [
       'All Ritual coverage',
-      '500+ edited photos',
-      'Premium photo album',
+      '200+ edited photos ',
+      'Premium Non-Tearable Album',
       'Drone photography',
-      'Online gallery forever',
+      'Cinematic Highlights and Teasers',
+      'Reels of each Event 30-40 sec.',
     ],
-    startingPrice: '₹1,00,000',
+    startingPrice: '₹1,50,000',
     popular: true,
   },
   {
@@ -105,12 +106,12 @@ export const packages: Package[] = [
     description: 'Make every milestone memorable with professional event photography.',
     includes: [
       '3-4 hours coverage',
-      '150+ edited photos',
+      '100+ edited photos',
       'Event highlight video',
-      'Print-ready files',
-      'Quick delivery',
+      '15 Sheet NTB Album',
+      'Full Event Video',
     ],
-    startingPrice: '₹30,000',
+    startingPrice: '₹45,000',
   },
   {
     id: '4',
@@ -123,7 +124,7 @@ export const packages: Package[] = [
       'Video highlights',
       'Personalized mood board',
     ],
-    startingPrice: '₹40,000',
+    startingPrice: '₹45,000',
   },
 ];
 

@@ -15,7 +15,7 @@ const achievements = [
 
 const awards = [
   'Best Wedding Photographer 2023 - Wedding Sutra',
-  'Excellence in Photography - WPPI 2022',,
+  'Excellence in Photography - WPPI 2022',
   'Masters Award - National Wedding Photography',
 ];
 
@@ -44,6 +44,39 @@ const About = () => {
         </motion.div>
       </section>
 
+      {/* Who We Are — Collective Intro */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">Who We Are</p>
+              <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">
+                An Elite Collective of Visual Artists
+              </h2>
+              <div className="gold-divider w-24 mx-auto mb-8" />
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Stories By Shaadi Mubarak is an elite collective of 12 highly skilled visual
+                artists, led by the young and visionary cinematographer and candid photographer,
+                <span className="text-foreground font-medium"> Sidhant Kumar Bisoyi</span>. Renowned
+                for his refined aesthetic and storytelling finesse, Sidhant has cultivated a team
+                that redefines wedding documentation with elegance and sophistication.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Rooted in a profound passion for photography, our work transcends traditional
+                coverage — transforming fleeting moments into timeless works of art. We specialize
+                in crafting visually rich narratives that embody emotion, grace, and authenticity,
+                ensuring every story we tell is both distinctive and unforgettable.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Story Section */}
       <section className="py-24 bg-jet">
         <div className="container mx-auto px-6">
@@ -58,7 +91,7 @@ const About = () => {
             >
               <img
                 src={photographerImg}
-                alt="Our Lead Photographer"
+                alt="Sidhant Kumar Bisoyi — Lead Photographer"
                 className="w-full max-w-lg mx-auto rounded-sm"
               />
               <div className="absolute -bottom-6 -right-6 border border-gold/30 w-full h-full rounded-sm -z-10" />
@@ -73,28 +106,27 @@ const About = () => {
             >
               <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">Meet the Artist</p>
               <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">
-                The Vision Behind the Lens
+                Sidhant Kumar Bisoyi
               </h2>
               <div className="gold-divider w-24 mb-8" />
-              
+
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Founded in 2020, LuxeFrames has been at the forefront of luxury wedding 
-                photography in India. What started as a passionate pursuit of capturing 
-                beautiful moments has evolved into an award-winning studio trusted by 
-                over 100 couples.
+                A young and visionary cinematographer and candid photographer, Sidhant leads the
+                Stories By Shaadi Mubarak collective with a sharp eye for beauty and an instinct
+                for authentic storytelling. His refined aesthetic sensibility sets the creative
+                standard for every project the studio undertakes.
               </p>
-              
+
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our lead photographer, with over 5 years of experience, brings a unique 
-                blend of technical expertise and artistic vision to every project. We 
-                believe that every love story is unique, and our mission is to tell yours 
-                in the most beautiful way possible.
+                With an unwavering commitment to excellence, Sidhant and his team approach each
+                celebration as a bespoke experience. From intimate glances to grand, opulent
+                festivities, every detail is captured with precision, creativity, and a cinematic
+                touch that elevates wedding photography into fine art.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                We don't just take photographs – we create timeless art pieces that you 
-                and your family will cherish for generations. Our commitment to excellence 
-                has earned us recognition from leading wedding publications worldwide.
+                At Stories By Shaadi Mubarak, we don't just document weddings — we curate
+                legacies, preserving your most cherished moments in their most exquisite form.
               </p>
 
               <Button variant="gold-outline" asChild>
@@ -177,11 +209,11 @@ const About = () => {
                 Capturing Emotions, Creating Art
               </h2>
               <div className="gold-divider w-24 mx-auto mb-8" />
-              
+
               <p className="text-muted-foreground text-xl leading-relaxed italic font-heading">
-                "Every wedding tells a unique love story. Our role is to be invisible 
-                observers, capturing genuine emotions and creating images that transport 
-                you back to those precious moments, years from now."
+                "Every wedding tells a unique love story. Our role is to be invisible observers,
+                capturing genuine emotions and creating images that transport you back to those
+                precious moments, years from now."
               </p>
               <p className="text-gold mt-4 font-heading">— The ShaadiMubarak Team</p>
             </motion.div>

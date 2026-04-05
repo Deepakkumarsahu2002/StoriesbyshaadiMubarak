@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import photographerImg from '@/assets/photographer.jpg';
 
 const stats = [
-  { icon: Camera, value: '500+', label: 'Weddings Captured' },
+  { icon: Camera, value: '50+', label: 'Weddings Captured' },
   { icon: Award, value: '5+', label: 'Years Experience' },
   { icon: Heart, value: '100+', label: 'Happy Couples' },
 ];
@@ -26,14 +26,14 @@ export const AboutPreview = () => {
             <div className="relative">
               <img
                 src={photographerImg}
-                alt="Professional Photographer"
+                alt="Sidhant Kumar Bisoyi — Lead Photographer"
                 className="w-full max-w-md mx-auto lg:mx-0 rounded-sm"
               />
               {/* Decorative Frame */}
               <div className="absolute -top-4 -left-4 w-full h-full border border-gold/30 rounded-sm -z-10" />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-gold/50 rounded-sm" />
             </div>
-            
+
             {/* Experience Badge */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -42,8 +42,8 @@ export const AboutPreview = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="absolute -bottom-6 -right-6 lg:right-12 bg-card border border-gold/50 px-6 py-4 rounded-sm shadow-lg"
             >
-              <p className="text-gold font-heading text-3xl">5+</p>
-              <p className="text-muted-foreground text-sm">Years of Excellence</p>
+              <p className="text-gold font-heading text-3xl">12</p>
+              <p className="text-muted-foreground text-sm">Visual Artists</p>
             </motion.div>
           </motion.div>
 
@@ -56,21 +56,22 @@ export const AboutPreview = () => {
           >
             <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">About Us</p>
             <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-              Crafting Visual Poetry Since 2020
+              An Elite Collective of Visual Artists
             </h2>
             <div className="gold-divider w-24 mb-8" />
-            
+
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              We are storytellers at heart, dedicated to capturing the essence of your most 
-              precious moments. With an eye for detail and a passion for perfection, we 
-              transform fleeting moments into timeless treasures.
+              Led by the young and visionary cinematographer{' '}
+              <span className="text-foreground font-medium">Sidhant Kumar Bisoyi</span>, Stories
+              By Shaadi Mubarak is a collective of 12 highly skilled visual artists who redefine
+              wedding documentation with elegance and sophistication.
             </p>
-            
+
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Our approach combines artistic vision with technical excellence, ensuring every 
-              photograph reflects the unique beauty and emotion of your special day. From 
-              intimate ceremonies to grand celebrations, we bring the same commitment to 
-              creating stunning visual narratives.
+              Rooted in a profound passion for photography, our work transcends traditional
+              coverage — transforming fleeting moments into timeless works of art. From intimate
+              glances to grand, opulent festivities, every detail is captured with precision,
+              creativity, and a cinematic touch.
             </p>
 
             {/* Stats */}
