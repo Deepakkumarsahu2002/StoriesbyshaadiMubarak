@@ -63,7 +63,7 @@ export const AboutPreview = () => {
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Led by the young and visionary cinematographer{' '}
               <span className="text-foreground font-medium">Sidhant Kumar Bisoyi</span>, Stories
-              By Shaadi Mubarak is a collective of 12 highly skilled visual artists who redefine
+              By Shaadi Mubarak is a collective team of 12 highly skilled visual artists who redefine
               wedding documentation with elegance and sophistication.
             </p>
 
