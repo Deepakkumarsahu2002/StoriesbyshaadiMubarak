@@ -5,9 +5,9 @@ import { Button } from '@/components/ui/button';
 import photographerImg from '@/assets/photographer.jpg';
 
 const stats = [
-  { icon: Camera, value: '50+', label: 'Weddings Captured' },
-  { icon: Award, value: '5+', label: 'Years Experience' },
-  { icon: Heart, value: '100+', label: 'Happy Couples' },
+  { icon: Camera, value: '800+', label: 'Weddings Captured' },
+  { icon: Award, value: '9+', label: 'Years Experience' },
+  { icon: Heart, value: '700+', label: 'Happy Couples' },
 ];
 
 export const AboutPreview = () => {
@@ -56,7 +56,7 @@ export const AboutPreview = () => {
           >
             <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">About Us</p>
             <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-              An Elite Collective of Visual Artists
+              Stories By ShaadiMubarak
             </h2>
             <div className="gold-divider w-24 mb-8" />
 

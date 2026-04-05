@@ -81,7 +81,7 @@ export const packages: Package[] = [
       '100+ edited photos',
       '10 Sheets NTB Luxury Album',
       'Location consultation',
-      'Reels of each Event 30-40 sec.',
+      '',
     ],
     startingPrice: '₹45,000',
   },

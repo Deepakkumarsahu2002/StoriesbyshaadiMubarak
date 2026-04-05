@@ -7,9 +7,9 @@ import photographerImg from '@/assets/photographer.jpg';
 import hero2 from '@/assets/hero-2.jpg';
 
 const achievements = [
-  { icon: Camera, value: '50+', label: 'Weddings Shot' },
-  { icon: Users, value: '100+', label: 'Happy Couples' },
-  { icon: Calendar, value: '5+', label: 'Years Experience' },
+  { icon: Camera, value: '800+', label: 'Weddings Shot' },
+  { icon: Users, value: '700+', label: 'Happy Couples' },
+  { icon: Calendar, value: '9+', label: 'Years Experience' },
   { icon: Trophy, value: '3+', label: 'Awards Won' },
 ];
 
@@ -56,7 +56,7 @@ const About = () => {
             >
               <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">Who We Are</p>
               <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">
-                An Elite Collective of Visual Artists
+                Stories By ShaadiMubarak
               </h2>
               <div className="gold-divider w-24 mx-auto mb-8" />
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
