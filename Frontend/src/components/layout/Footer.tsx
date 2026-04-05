@@ -38,7 +38,7 @@ export const Footer = () => {
                 <Facebook size={18} />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://youtube.com/@shaadimubarak-e4z?si=mSux7JCKfXd7qgqW"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-gold/50 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300"
