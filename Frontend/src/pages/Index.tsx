@@ -6,6 +6,7 @@ import { Testimonials } from '@/components/home/Testimonials';
 import { PackagesPreview } from '@/components/home/PackagesPreview';
 import VideoSection from "@/components/home/VideoSection";
 import { ContactCTA } from '@/components/home/ContactCTA';
+import { ReviewSection } from "@/components/home/ReviewSection";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Testimonials />
       <PackagesPreview />
       <ContactCTA />
+      <ReviewSection />
     </Layout>
   );
 };
