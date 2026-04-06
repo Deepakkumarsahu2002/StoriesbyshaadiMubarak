@@ -17,7 +17,7 @@ const VideoSection = () => {
     const loadVideos = async () => {
       try {
         const res = await API.get("/videos");
-        setVideos(res.data.slice(0, 6)); // featured only
+        setVideos(res.data.slice(0, 3)); // featured only
       } catch (err) {
         console.error("Failed to load videos", err);
       }

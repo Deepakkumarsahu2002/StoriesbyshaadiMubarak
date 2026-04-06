@@ -77,13 +77,13 @@ export const packages: Package[] = [
     name: 'Pre-Wedding Package',
     description: 'Capture your love story before the big day with stunning pre-wedding shoots at exotic locations.',
     includes: [
-      '6-8 hours of Shooting',
+      '6-8 Hours of Shooting',
       '100+ Edited Photos',
       '10 Sheets NTB Luxury Album',
       'Cinematic Song, Teaser and Reel',
       'Location Consultation',
     ],
-    startingPrice: '₹45,000',
+    startingPrice: '₹30,000',
   },
   {
     id: '2',
@@ -99,7 +99,7 @@ export const packages: Package[] = [
 
 
     ],
-    startingPrice: '₹1,50,000',
+    startingPrice: '₹80,000',
     popular: true,
   },
   {
@@ -107,10 +107,10 @@ export const packages: Package[] = [
     name: 'Birthday & Events',
     description: 'Make every milestone memorable with professional event photography.',
     includes: [
-      '5-6 hours coverage',
+      '5-6 Hours Coverage',
       '100+ Edited Photos',
       '15 Sheet NTB Album',
-      'Event highlight video',
+      'Event Highlight Video',
       'Full Event Cinematic Video',
     ],
     startingPrice: '₹40,000',
@@ -126,7 +126,7 @@ export const packages: Package[] = [
       'Video Highlight',
       'Cinematic Engagement Film',
     ],
-    startingPrice: '₹45,000',
+    startingPrice: '₹30,000',
   },
 ];
 
