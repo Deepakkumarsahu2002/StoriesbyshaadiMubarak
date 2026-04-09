@@ -16,7 +16,7 @@ const faqs = [
   {
     question: 'When will we receive our photos and videos?',
     answer:
-      'Edited photos are typically delivered within 4–6 weeks after the wedding. Cinematic highlight films and full videos take 8–10 weeks. We deliver everything through a private, password-protected online gallery link.',
+      'Edited photographs will be delivered within a few days of the event. The highlight film and full wedding video will be carefully crafted and shared at the earliest, depending on our post-production schedule, ensuring the highest quality.',
   },
   {
     question: 'Do you offer customised packages?',
