@@ -133,9 +133,9 @@ export const packages: Package[] = [
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Dipti & Sidhant',
-    occasion: 'Wedding Photography',
-    quote: 'Absolutely magical! They captured every emotion, every tear of joy, every laugh. Our wedding album is our most treasured possession.',
+    name: 'Aarav & Sneha',
+    occasion: 'Wedding',
+    quote: 'Every moment of our wedding was captured beautifully. Looking at the photos feels like reliving the day again!',
     rating: 5,
   },
   {
@@ -147,6 +147,48 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: '3',
+    name: 'Rohit & Ananya',
+    occasion: 'Engagement',
+    quote: 'Our engagement pictures turned out so elegant and natural. The attention to detail was amazing!',
+    rating: 5,
+  },
+  {
+    id: '4',
+    name: 'Vihaan Sharma',
+    occasion: 'Birthday Celebration',
+    quote: 'The birthday shoot was vibrant and full of life. Every candid moment was captured perfectly!',
+    rating: 4,
+  },
+  {
+    id: '5',
+    name: 'Neha & Karan',
+    occasion: 'Wedding',
+    quote: 'From haldi to reception, every function was documented so beautifully. Highly recommended!',
+    rating: 5,
+  },
+  {
+    id: '6',
+    name: 'Ishita & Dev',
+    occasion: 'Pre-Wedding Shoot',
+    quote: 'Creative concepts and stunning locations made our pre-wedding shoot truly magical.',
+    rating: 5,
+  },
+  {
+    id: '7',
+    name: 'Aditya & Pooja',
+    occasion: 'Engagement',
+    quote: 'The team captured our chemistry so naturally. The photos feel real and emotional.',
+    rating: 5,
+  },
+  {
+    id: '8',
+    name: 'Krishna Patel',
+    occasion: 'Birthday Party',
+    quote: 'Loved the candid shots! The photographer didn’t miss a single important moment.',
+    rating: 4,
+  },
+  {
+    id: '9',
     name: 'Trisha',
     occasion: 'Birthday Event',
     quote: 'Professional, creative, and incredibly talented. They made my daughter\'s first birthday truly unforgettable.',
