@@ -51,7 +51,7 @@ export const HeroSlider = () => {
   }, [nextSlide]);
 
   const slideVariants = {
-    enter: (direction: number) => ({
+    enter: (direction) => ({
       x: direction > 0 ? '100%' : '-100%',
       opacity: 0,
       scale: 1.1,
@@ -61,17 +61,17 @@ export const HeroSlider = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        x: { type: 'spring' as const, stiffness: 50, damping: 20 },
+        x: { type: 'spring', stiffness: 50, damping: 20 },
         opacity: { duration: 0.8 },
         scale: { duration: 1.2 },
       },
     },
-    exit: (direction: number) => ({
+    exit: (direction) => ({
       x: direction > 0 ? '-100%' : '100%',
       opacity: 0,
       scale: 0.95,
       transition: {
-        x: { type: 'spring' as const, stiffness: 50, damping: 20 },
+        x: { type: 'spring', stiffness: 50, damping: 20 },
         opacity: { duration: 0.5 },
       },
     }),
@@ -79,6 +79,7 @@ export const HeroSlider = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
+      
       {/* Slides */}
       <AnimatePresence initial={false} custom={direction} mode="wait">
         <motion.div
@@ -90,88 +91,103 @@ export const HeroSlider = () => {
           exit="exit"
           className="absolute inset-0"
         >
-          {/* Background Image */}
+          
+          {/* Background */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
           >
-            {/* Overlay */}
             <div className="absolute inset-0 hero-overlay" />
           </div>
 
           {/* Content */}
-          <div className="relative h-full flex items-center justify-center text-center px-6">
+          <div className="relative h-full flex items-center justify-center text-center px-4 sm:px-6">
             <div className="max-w-4xl">
+              
+              {/* Subtitle */}
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="text-gold uppercase tracking-[0.3em] text-sm md:text-base mb-4"
+                className="text-gold uppercase tracking-[0.2em] text-xs md:text-base mb-3"
               >
                 {slides[currentSlide].subtitle}
               </motion.p>
-              
+
+              {/* Title */}
               <motion.h1
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
-                className="font-heading text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 leading-tight"
+                className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-foreground mb-5 leading-tight"
               >
                 {slides[currentSlide].title}
               </motion.h1>
-              
+
+              {/* Line */}
               <motion.div
                 initial={{ opacity: 0, scaleX: 0 }}
                 animate={{ opacity: 1, scaleX: 1 }}
                 transition={{ delay: 0.7, duration: 0.6 }}
-                className="w-24 h-[1px] bg-gold mx-auto mb-6"
+                className="w-20 md:w-24 h-[1px] bg-gold mx-auto mb-5"
               />
-              
+
+              {/* Description */}
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.6 }}
-                className="text-foreground/80 text-lg md:text-xl mb-10"
+                className="text-foreground/80 text-base md:text-xl mb-6 md:mb-10"
               >
                 {slides[currentSlide].description}
               </motion.p>
 
+              {/* Buttons */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.1, duration: 0.6 }}
-                className="flex flex-col sm:flex-row gap-4 justify-center"
+                className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center"
               >
-                <Button variant="hero" asChild>
+                <Button
+                  variant="hero"
+                  asChild
+                  className="w-auto px-6 py-2 text-sm"
+                >
                   <Link to="/gallery">View Portfolio</Link>
                 </Button>
-                <Button variant="hero-outline" asChild>
+
+                <Button
+                  variant="hero-outline"
+                  asChild
+                  className="w-auto px-6 py-2 text-sm"
+                >
                   <Link to="/contact">Book a Session</Link>
                 </Button>
               </motion.div>
+
             </div>
           </div>
         </motion.div>
       </AnimatePresence>
 
-      {/* Navigation Arrows */}
+      {/* Arrows (Hidden on Mobile) */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 border border-gold/50 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300 z-10"
-        aria-label="Previous slide"
+        className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 border border-gold/50 rounded-full items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300 z-10"
       >
         <ChevronLeft size={24} />
       </button>
+
       <button
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 border border-gold/50 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300 z-10"
-        aria-label="Next slide"
+        className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 border border-gold/50 rounded-full items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300 z-10"
       >
         <ChevronRight size={24} />
       </button>
 
-      {/* Slide Indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+      {/* Indicators */}
+      <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -181,10 +197,9 @@ export const HeroSlider = () => {
             }}
             className={`h-[2px] transition-all duration-500 ${
               index === currentSlide
-                ? 'w-12 bg-gold'
-                : 'w-6 bg-foreground/30 hover:bg-foreground/50'
+                ? 'w-10 md:w-12 bg-gold'
+                : 'w-5 md:w-6 bg-foreground/30'
             }`}
-            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
@@ -194,7 +209,7 @@ export const HeroSlider = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10"
+        className="hidden md:block absolute bottom-24 left-1/2 -translate-x-1/2 z-10"
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
@@ -208,6 +223,7 @@ export const HeroSlider = () => {
           />
         </motion.div>
       </motion.div>
+
     </section>
   );
 };
