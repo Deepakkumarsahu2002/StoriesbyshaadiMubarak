@@ -7,6 +7,7 @@ import { PackagesPreview } from '@/components/home/PackagesPreview';
 import VideoSection from "@/components/home/VideoSection";
 import { ContactCTA } from '@/components/home/ContactCTA';
 import { ReviewSection } from "@/components/home/ReviewSection";
+import { FAQSection } from '@/components/home/FAQSection';
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <PackagesPreview />
       <ContactCTA />
       <ReviewSection />
+      <FAQSection />
     </Layout>
   );
 };
